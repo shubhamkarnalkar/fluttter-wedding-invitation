@@ -26,6 +26,7 @@ final Map<String, String> ja = {
   LangTextConstants.lbl_shaadi: "結婚式",
   LangTextConstants.lbl_haladi: "ハルディの儀式",
   LangTextConstants.lbl_address: "住所",
+  LangTextConstants.lbl_maps_location: "地図の位置",
 
 // Variable values
   LangTextConstants.val_address:

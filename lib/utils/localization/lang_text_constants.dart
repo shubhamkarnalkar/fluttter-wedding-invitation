@@ -17,6 +17,7 @@ class LangTextConstants {
   static String msg_check_your_app_s = "msg_check_your_app_s";
   static String msg_network_err = "msg_network_err";
   static String msg_something_went_wrong = "msg_something_went_wrong";
+  static String lbl_maps_location = 'lbl_maps_location';
 
   static String lbl_color = 'lbl_color';
   static String lbl_save = 'lbl_save';
@@ -30,4 +31,5 @@ class LangTextConstants {
   static String val_address = 'val_address';
   static String val_bride_name = 'lbl_bride_name';
   static String val_groom_name = 'lbl_groom_name';
+  static String url_wedding_invite_maps = 'https://g.co/kgs/WcT3eRt';
 }

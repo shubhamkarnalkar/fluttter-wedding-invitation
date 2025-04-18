@@ -27,6 +27,7 @@ final Map<String, String> arAR = {
   LangTextConstants.lbl_shaadi: "الزفاف",
   LangTextConstants.lbl_haladi: "مراسم الهلدي",
   LangTextConstants.lbl_address: "العنوان",
+  LangTextConstants.lbl_maps_location: "موقع الخريطة",
 
 // Variable values
   LangTextConstants.val_address:

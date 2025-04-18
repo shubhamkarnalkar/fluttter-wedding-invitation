@@ -27,6 +27,7 @@ final Map<String, String> deDE = {
   LangTextConstants.lbl_shaadi: "Hochzeit",
   LangTextConstants.lbl_haladi: "Haldi-Zeremonie",
   LangTextConstants.lbl_address: "Adresse",
+  LangTextConstants.lbl_maps_location: "Kartenstandort",
 
 // Variable values
   LangTextConstants.val_address:

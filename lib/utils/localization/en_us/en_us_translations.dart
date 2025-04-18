@@ -28,10 +28,11 @@ final Map<String, String> enUs = {
   LangTextConstants.lbl_shaadi: "Vivah",
   LangTextConstants.lbl_haladi: "Haladi",
   LangTextConstants.lbl_address: "Address",
+  LangTextConstants.lbl_maps_location: "Maps Location",
 
 // Variable values
   LangTextConstants.val_address:
-      "Matoshri Lawns,/n Akole-Rajur Road, Indori Phata,/n Tal: Akole,  A.Nagar",
+      "Matoshri Lawns, Akole-Rajur Road, Indori Phata, Tal: Akole,  A.Nagar",
   LangTextConstants.val_bride_name: "Monika",
   LangTextConstants.val_groom_name: "Mayur"
 };

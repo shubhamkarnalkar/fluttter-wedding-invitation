@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:neopop/neopop.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:wedding_project/utils/utils.dart';
 import 'package:wedding_project/widgets/custom_widgets.dart';
 import '../controllers/settings_controller.dart';
@@ -13,6 +14,20 @@ class LocationPage extends StatefulHookConsumerWidget {
 }
 
 class _LocationPageState extends ConsumerState<LocationPage> {
+  openMaps() async {
+    final Uri googleMapsUri =
+        Uri.parse(LangTextConstants.url_wedding_invite_maps);
+
+    if (await canLaunchUrl(googleMapsUri)) {
+      await launchUrl(googleMapsUri, mode: LaunchMode.externalApplication);
+    } else {
+      Future.microtask(
+        () => GlobalMessenger.showSnackBarMessage(
+            context: context, error: 'Not able to open Maps'),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -50,6 +65,7 @@ class _LocationPageState extends ConsumerState<LocationPage> {
                   child: Text(
                     LangTextConstants.val_address.tr,
                     softWrap: true,
+                    textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headlineLarge,
                   ),
                 ),
@@ -60,7 +76,9 @@ class _LocationPageState extends ConsumerState<LocationPage> {
               child: SizedBox(
                 width: 300,
                 child: NeoPopTiltedButton(
+                  onTapUp: () => openMaps(),
                   isFloating: true,
+                  enabled: true,
                   decoration: NeoPopTiltedButtonDecoration(
                     color: theme.colorScheme.primary,
                     plunkColor: theme.colorScheme.primary,
@@ -74,7 +92,7 @@ class _LocationPageState extends ConsumerState<LocationPage> {
                     ),
                     child: Center(
                       child: Text(
-                        LangTextConstants.lbl_address.tr,
+                        LangTextConstants.lbl_maps_location.tr,
                         style: theme.textTheme.bodyLarge!.copyWith(
                           color: Colors.black,
                         ),

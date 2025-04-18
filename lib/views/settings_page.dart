@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:wedding_project/controllers/settings_controller.dart';
 import 'package:wedding_project/models/hive/settings/settings_adapter.dart';
 import 'package:wedding_project/utils/localization/app_localization.dart';
 import 'package:wedding_project/utils/localization/lang_text_constants.dart';
-import 'package:wedding_project/utils/router/router_imports.dart';
 import 'package:wedding_project/widgets/custom_widgets.dart';
 
 class SettingsPage extends ConsumerStatefulWidget {

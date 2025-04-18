@@ -25,6 +25,7 @@ final Map<String, String> zhCN = {
   LangTextConstants.lbl_shaadi: "婚礼",
   LangTextConstants.lbl_haladi: "姜黄仪式",
   LangTextConstants.lbl_address: "地址",
+  LangTextConstants.lbl_maps_location: "地图位置",
 
 // Variable values
   LangTextConstants.val_address:

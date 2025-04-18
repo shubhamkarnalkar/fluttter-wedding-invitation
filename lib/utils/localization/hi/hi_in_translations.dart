@@ -27,6 +27,7 @@ final Map<String, String> hiIn = {
   LangTextConstants.lbl_shaadi: "लग्न",
   LangTextConstants.lbl_haladi: "हळदी",
   LangTextConstants.lbl_address: "पत्ता",
+  LangTextConstants.lbl_maps_location: "नकाशाचा स्थान",
 
 // Variable values
   LangTextConstants.val_address:
