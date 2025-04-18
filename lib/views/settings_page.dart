@@ -146,7 +146,7 @@ class TileForTextScale extends ConsumerWidget {
                       .read(settingsControllerProvider.notifier)
                       .decreaseGlobalTextSize(),
                   style: ButtonStyle(
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
                             20.0), // Adjust the radius as needed
@@ -167,7 +167,7 @@ class TileForTextScale extends ConsumerWidget {
                       .read(settingsControllerProvider.notifier)
                       .increaseGlobalTextSize(),
                   style: ButtonStyle(
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
                             20.0), // Adjust the radius as needed

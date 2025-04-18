@@ -1,4 +1,4 @@
-library utils;
+library;
 
 export '/utils/localization/app_localization.dart';
 export 'constants/app_constants.dart';

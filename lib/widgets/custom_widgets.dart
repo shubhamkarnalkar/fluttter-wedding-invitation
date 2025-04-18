@@ -1,4 +1,4 @@
-library custom_widgets;
+library;
 
 export 'app_bar/custom_app_bar.dart';
 export 'base_button.dart';
