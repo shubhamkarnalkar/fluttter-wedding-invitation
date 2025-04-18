@@ -121,8 +121,7 @@ class SettingsController extends StateNotifier<SettingsModel> {
         state = _getSetting();
         break;
 
-      default:
-    }
+      }
   }
 
   Future<void> setAuth(

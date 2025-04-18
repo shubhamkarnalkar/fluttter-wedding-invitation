@@ -4,6 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 part 'material_model.g.dart';
 
 @HiveType(typeId: 2)
+// ignore: must_be_immutable
 class MaterialsModel extends HiveObject with EquatableMixin {
   MaterialsModel(
       {required this.material,

@@ -5,6 +5,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 part 'scanned_barcode_model.g.dart';
 
 @HiveType(typeId: 0)
+// ignore: must_be_immutable
 class ScannedBarcodesModel extends HiveObject with EquatableMixin {
   @HiveField(0)
   late String docNum;

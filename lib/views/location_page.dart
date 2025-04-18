@@ -23,6 +23,7 @@ class _LocationPageState extends ConsumerState<LocationPage> {
     } else {
       Future.microtask(
         () => GlobalMessenger.showSnackBarMessage(
+            // ignore: use_build_context_synchronously
             context: context, error: 'Not able to open Maps'),
       );
     }

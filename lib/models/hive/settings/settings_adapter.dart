@@ -5,6 +5,7 @@ import 'package:hive/hive.dart';
 part 'settings_adapter.g.dart';
 
 @HiveType(typeId: 1)
+// ignore: must_be_immutable
 class SettingsModel extends HiveObject with EquatableMixin {
   @HiveField(0, defaultValue: true)
   late bool isDark;
